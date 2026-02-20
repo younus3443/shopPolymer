@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="rest.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,34 +22,30 @@
     <header class="site-header">
         <nav class="navbar">
             <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-                <img class="menu-img" src="./Images/menu.svg" alt="cart" />
+                <img class="menu-img" src="./images/menu.svg" alt="cart" />
             </button>
-            <!-- Center: Logo -->
             <a href="index.html" class="btn">
                 <h3>SHOP</h3>
             </a>
-
-            <!-- Right: Cart -->
-            <a href="cart.html" class="cart-btn">
-                <img src="./Images/cart.svg" alt="cart" />
+            <a href="cartPage.html" class="cart-btn">
+                <img src="./images/cart.svg" alt="cart" />
             </a>
         </nav>
     </header>
 
     <!-- Offcanvas menu (for hamburger) -->
     <div class="offcanvas offcanvas-start" id="mobileMenu">
-        <a href="men-outerware.html" class="nav-link active">Men's Outerwear</a>
-        <a href="ladies-outerware.html" class="nav-link">Ladies Outerwear</a>
-        <a href="menT-shirt.html" class="nav-link">Men's T-Shirts</a>
-        <a href="ladiesT-shirt.html" class="nav-link">Ladies T-Shirts</a>
+        <a href="mensOuterwear.html" class="nav-link active">Men's Outerwear</a>
+        <a href="ladiesOuterwear.html" class="nav-link">Ladies Outerwear</a>
+        <a href="mensTshirt.html" class="nav-link">Men's T-Shirts</a>
+        <a href="ladiesTshirt.html" class="nav-link">Ladies T-Shirts</a>
     </div>
     <span class="d-flex justify-content-center checkout">Your cart</span>
     <span class="item-count d-flex text-center justify-content-center">(1 item)</span>
     <div class="seleted-item ">
         <div class="div1 d-flex justify-content-center col-12  mb-2">
 
-            <img src="./Images/men-outer/1.jpg" alt="Men's Tech Shell Full-Zip" class="cart-item-img">
-
+            <img src="./images/mens_outerwear/1.jpg" alt="Men's Tech Shell Full-Zip" class="cart-item-img">
             <div class="cart-details">
                 <div class="h5  d-flex justify-content-between d-md-none "
                     style="font-size: 13px; margin-top: 20px; margin-left: 20px;">Men's Tech Shell Full-Zip
@@ -92,7 +88,7 @@
         </div>
     </div>
     </div>
-    <a href="checkout.html">
+    <a href="checkoutPage.html">
         <div class="fixed-bottom-div d-flex justify-content-center d-md-none">
             CHECKOUT
         </div>
