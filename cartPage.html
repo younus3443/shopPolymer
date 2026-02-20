@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <title>Your Cart - SHOP</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <img class="menu-img" src="./Images/menu.svg" alt="cart" />
+            </button>
+            <!-- Center: Logo -->
+            <a href="index.html" class="btn">
+                <h3>SHOP</h3>
+            </a>
+
+            <!-- Right: Cart -->
+            <a href="cart.html" class="cart-btn">
+                <img src="./Images/cart.svg" alt="cart" />
+            </a>
+        </nav>
+    </header>
+
+    <!-- Offcanvas menu (for hamburger) -->
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <a href="men-outerware.html" class="nav-link active">Men's Outerwear</a>
+        <a href="ladies-outerware.html" class="nav-link">Ladies Outerwear</a>
+        <a href="menT-shirt.html" class="nav-link">Men's T-Shirts</a>
+        <a href="ladiesT-shirt.html" class="nav-link">Ladies T-Shirts</a>
+    </div>
+    <span class="d-flex justify-content-center checkout">Your cart</span>
+    <span class="item-count d-flex text-center justify-content-center">(1 item)</span>
+    <div class="seleted-item ">
+        <div class="div1 d-flex justify-content-center col-12  mb-2">
+
+            <img src="./Images/men-outer/1.jpg" alt="Men's Tech Shell Full-Zip" class="cart-item-img">
+
+            <div class="cart-details">
+                <div class="h5  d-flex justify-content-between d-md-none "
+                    style="font-size: 13px; margin-top: 20px; margin-left: 20px;">Men's Tech Shell Full-Zip
+                    <span class="float-end d-flex d-md-none"
+                        style="font-size: 1.3rem; cursor: pointer; color: hsl(0, 0%, 56%); font-weight: 300; margin-right: 15px;">&times;</span>
+                </div>
+                <div class=" d-flex align-items-center" style="gap: 20px; margin-right: 0; ">
+                    <div class="h5  d-flex justify-content-between d-none d-md-block "
+                        style="font-size: 13px; margin-top: 20px; margin-left: 20px;">Men's Tech Shell Full-Zip
+                        <span class="float-end d-flex d-md-none"
+                            style="font-size: 1.3rem; cursor: pointer; color: hsl(0, 0%, 56%); font-weight: 300; margin-right: 15px;">&times;</span>
+                    </div>
+                    <div class="d-flex ms-auto align-items-center">
+                        <span class=" qyt-cart-label d-flex align-items-center">
+                            Qty:
+                        </span>
+                        <select class="form-select qty-selector shadow-none border-0" style="width: 60px; ">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <span class="cart-label">Size:&nbsp;<span class="fw-normal">M</span></span>
+
+                    <span class="cart-label">$50.20</span>
+                    <span class="d-none d-md-block"
+                        style="font-size: 1.3rem; cursor: pointer; color: hsl(0, 0%, 56%); font-weight: 300; margin-left:18px;">&times;</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-end col-12 mt-2  total" style="gap: 20px;">
+            <div class="cart-total me-2">Total:</div>
+            <div class="cart-total">$50.20</div>
+            <div class="d-none d-md-block">
+                <a href="checkout.html">
+                    <button style="padding:5px; width: 170px; font-size: 14px; margin-left: 50px;">CHECKOUT</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a href="checkout.html">
+        <div class="fixed-bottom-div d-flex justify-content-center d-md-none">
+            CHECKOUT
+        </div>
+    </a>
+
+</body>
+
+</html>

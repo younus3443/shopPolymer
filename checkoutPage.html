@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css" />
+
+    <title>Checkout-SHOP</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <img class="menu-img" src="./Images/menu.svg" alt="cart" />
+            </button>
+            <!-- Center: Logo -->
+            <a href="index.html" class="btn">
+                <h3>SHOP</h3>
+            </a>
+
+            <!-- Right: Cart -->
+            <a href="cart.html" class="cart-btn">
+                <img src="./Images/cart.svg" alt="cart" />
+            </a>
+        </nav>
+    </header>
+      <div class="offcanvas offcanvas-start" id="mobileMenu">
+      <a href="men-outerware.html" class="nav-link active">Men's Outerwear</a>
+      <a href="ladies-outerware.html" class="nav-link">Ladies Outerwear</a>
+      <a href="menT-shirt.html" class="nav-link">Men's T-Shirts</a>
+      <a href="ladiesT-shirt.html" class="nav-link">Ladies T-Shirts</a>
+    </div>
+
+    <span class="d-flex justify-content-center checkout">Checkout</span>
+    <span class="d-flex justify-content-center price">Shop is a demo app - form data will not be sent</span>
+    <div class="form-container">
+        <div class="row gx-5">
+            <div class="acc-info col-12 col-md-6">
+                <span class="acc-txt">Account Information</span>
+                <form>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" />
+                        <label for="phone">Phone Number</label>
+                    </div>
+
+                    <span class="section-title acc-txt">Shipping Address</span>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="text" class="form-control" id="address" placeholder="Address" />
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="text" class="form-control" id="city" placeholder="City" />
+                        <label for="city">City</label>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4 custom-floating">
+                                <input type="text" class="form-control" id="state" placeholder="State/Province" />
+                                <label for="state">State/Province</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4 custom-floating">
+                                <input type="text" class="form-control" id="zip" placeholder="Zip/Postal Code" />
+                                <label for="zip">Zip/Postal Code</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-5 ">
+                        <select class="form-select rounded-0 border-0 border-secondary border-bottom  shadow-none " id="country" aria-label="Country">
+                            <option selected>United States</option>
+                            <option>Canada</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                            <option>Other</option>
+                        </select>
+                        <label for="country">Country</label>
+                    </div>
+                    <span class="section-title acc-txt">Billing Address</span>
+                    <br>
+                    <input class="form-check-input" type="checkbox" style="border-color: black; border-width: 2px;" id="differentBilling" />
+
+                    <label class="form-check-label" for="differentBilling">
+                        Use different billing address
+                    </label>
+                    
+
+                </form>
+            </div>
+            <div class="paymet-info col-12 col-md-6">
+                <span class="section-title acc-txt">Payment Method</span>
+                <form>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="text" class="form-control" id="cardholder" placeholder="Cardholder Name" />
+                        <label for="cardholder">Cardholder Name</label>
+                    </div>
+                    <div class="form-floating mb-4 custom-floating">
+                        <input type="text" class="form-control" id="cardnumber" placeholder="Card Number" />
+                        <label for="cardnumber">Card Number</label>
+                    </div>
+                    <div class="row g-2 mb-4">
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select rounded-0 border-secondary border-0 border-bottom shadow-none" id="expMonth" aria-label="Exp Month">
+                                    <option value="01" selected>Jan</option>
+                                    <option value="02">Feb</option>
+                                    <option value="03">Mar</option>
+                                    <option value="04">Apr</option>
+                                    <option value="05">May</option>
+                                    <option value="06">Jun</option>
+                                    <option value="07">Jul</option>
+                                    <option value="08">Aug</option>
+                                    <option value="09">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <label for="expMonth">Expiry</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select rounded-0 border-secondary border-0 border-bottom shadow-none" id="expMonth" aria-label="Exp Month">
+                                    <option value="01" selected>2016</option>
+                                    <option value="02">2017</option>
+                                    <option value="03">2018</option>
+                                    <option value="04">2019</option>
+                                    <option value="05">2020</option>
+                                    <option value="06">2021</option>
+                                    <option value="07">2022</option>
+                                    <option value="08">2023</option>
+                                    <option value="09">2024</option>
+                                    <option value="10">2025</option>
+                                 
+                                </select>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="cvv" placeholder="CVV" />
+                                <label for="cvv">CVV</label>
+                            </div>
+                        </div>
+                        <div class="order-summary">
+                            <div class="row align-items-center mb-2">
+                                <span class="order-summary-label acc-txt">Order Summary</span>
+                                <div class="col-8 form-check-label">
+                                    Men's Tech Shell Full-Zip
+                                </div>
+                                <div class="col-4 text-end form-check-label">
+                                    $502.00
+                                </div>
+                            </div>
+                            <div class=" row align-items-center border-0">
+                                <div class="col-8">
+                                    <span class="form-check-label">Total</span>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <span class="form-check-label">$502.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="placeorder-button col-md-6">PLACE ORDER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-footer">
+        <footer class="d-flex justify-content-center">
+            <span>Made by Polymer</span>
+        </footer>
+        <div class="d-flex justify-content-center bottom-0">
+            <button class="footer-btn">DEMO ONLY</button>
+        </div>
+        <div class="fixed-bottom-div d-flex justify-content-center d-md-none">
+            ADD TO CART
+        </div>
+    </div>
+
+</body>
+
+</html>
